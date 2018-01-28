@@ -1,8 +1,8 @@
 package idv.jasonwangdev.dp.repository.database.example;
 
 import android.database.sqlite.SQLiteOpenHelper;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import java.util.Date;
@@ -10,9 +10,9 @@ import java.util.List;
 
 import idv.jasonwangdev.dp.repository.database.example.database.DatabaseRepository;
 import idv.jasonwangdev.dp.repository.database.example.database.realm.RealmConfigurationProvider;
+import idv.jasonwangdev.dp.repository.database.example.database.realm.RealmRepository;
 import idv.jasonwangdev.dp.repository.database.example.database.realm.user.DeleteAllUserRealmSpecification;
 import idv.jasonwangdev.dp.repository.database.example.database.realm.user.ReadAllUserRealmSpecification;
-import idv.jasonwangdev.dp.repository.database.example.database.realm.RealmRepository;
 import idv.jasonwangdev.dp.repository.database.example.database.sqlite.SqliteOpenHelperProvider;
 import idv.jasonwangdev.dp.repository.database.example.database.sqlite.user.DeleteAllUserSqliteSpecification;
 import idv.jasonwangdev.dp.repository.database.example.database.sqlite.user.ReadAllUserSqliteSpecification;

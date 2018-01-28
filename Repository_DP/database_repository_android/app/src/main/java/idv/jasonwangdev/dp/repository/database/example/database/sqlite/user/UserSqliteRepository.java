@@ -51,6 +51,7 @@ public class UserSqliteRepository implements DatabaseRepository<User> {
         db.setTransactionSuccessful();
         db.endTransaction();
         db.close();
+        helper.close();
     }
 
 
@@ -64,6 +65,7 @@ public class UserSqliteRepository implements DatabaseRepository<User> {
             objects.add(toObjectMapper.map(cursor));
         cursor.close();
         db.close();
+        helper.close();
         return objects;
     }
 
@@ -82,6 +84,7 @@ public class UserSqliteRepository implements DatabaseRepository<User> {
         db.setTransactionSuccessful();
         db.endTransaction();
         db.close();
+        helper.close();
     }
 
 
@@ -90,6 +93,7 @@ public class UserSqliteRepository implements DatabaseRepository<User> {
         SQLiteDatabase db = helper.getReadableDatabase();
         SqliteSpecification sqliteSpecification = (SqliteSpecification) specification;
         db.execSQL(sqliteSpecification.toSqlQuery());
+        helper.close();
     }
 
 }
