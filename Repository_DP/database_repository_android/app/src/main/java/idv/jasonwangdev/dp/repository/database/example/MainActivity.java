@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 import idv.jasonwangdev.dp.repository.database.example.database.DatabaseRepository;
+import idv.jasonwangdev.dp.repository.database.example.database.realm.RealmConfigurationProvider;
 import idv.jasonwangdev.dp.repository.database.example.database.realm.specification.user.DeleteAllUserRealmSpecification;
 import idv.jasonwangdev.dp.repository.database.example.database.realm.specification.user.ReadAllUserRealmSpecification;
 import idv.jasonwangdev.dp.repository.database.example.database.realm.RealmRepository;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void testRealm() {
-        RealmConfiguration realmConfiguration = Realm.getDefaultConfiguration();
+        RealmConfiguration realmConfiguration = RealmConfigurationProvider.getDefault();
         DatabaseRepository repository = new RealmRepository(realmConfiguration);
 
         Log.d(TAG, "---------- Read User ----------");
