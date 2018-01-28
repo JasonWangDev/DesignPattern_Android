@@ -1,9 +1,10 @@
 apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "example.databse.repository.dp.jasonwangdev.idv.databaserepository"
+        applicationId "idv.jasonwangdev.dp.repository.database.example"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1

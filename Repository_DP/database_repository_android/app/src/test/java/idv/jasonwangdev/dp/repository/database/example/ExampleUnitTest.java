@@ -1,4 +1,4 @@
-package example.databse.repository.dp.jasonwangdev.idv.databaserepository;
+package idv.jasonwangdev.dp.repository.database.example;
 
 import org.junit.Test;
 

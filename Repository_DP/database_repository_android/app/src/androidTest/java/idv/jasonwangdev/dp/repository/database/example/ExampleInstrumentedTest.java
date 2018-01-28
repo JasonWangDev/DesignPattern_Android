@@ -1,4 +1,4 @@
-package example.databse.repository.dp.jasonwangdev.idv.databaserepository;
+package idv.jasonwangdev.dp.repository.database.example;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("example.databse.repository.dp.jasonwangdev.idv.databaserepository", appContext.getPackageName());
+        assertEquals("idv.jasonwangdev.dp.repository.database.example", appContext.getPackageName());
     }
 }
